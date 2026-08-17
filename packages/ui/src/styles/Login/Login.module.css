@@ -1,0 +1,323 @@
+.page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem 1rem;
+    background: #ffffff;
+}
+
+.brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo {
+    height: 52px;
+    width: auto;
+}
+
+.subtitle {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    letter-spacing: 0%;
+    text-align: center;
+    color: rgba(113, 113, 122, 1);
+    margin: 0;
+}
+
+.card {
+    width: 100%;
+    max-width: 480px;
+    background: #ffffff;
+    border: 1px solid #e4e4e7;
+    border-radius: 12px;
+    padding: 38px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.title {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #09090b;
+    margin: 0 0 0.375rem;
+}
+
+.description {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 0.875rem;
+    color: rgba(113, 113, 122, 1);
+    margin: 0 0 1.5rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.375rem;
+}
+
+.label {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 0.8125rem;
+    color: #09090b;
+}
+
+.input {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size: 0.875rem;
+    padding: 0.625rem 0.75rem;
+    border: 1px solid #e4e4e7;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #09090b;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.input::placeholder {
+    color: #a1a1aa;
+}
+
+.input:focus {
+    outline: none;
+    border-color: rgba(0, 61, 255, 1);
+    box-shadow: 0 0 0 3px rgba(0, 61, 255, 0.12);
+}
+
+.forgotRow {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -0.5rem;
+}
+
+.link {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 0.8125rem;
+  color: rgba(0, 61, 255, 1);
+  text-decoration: underline;
+}
+
+.submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    height: 40px;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 8px;
+    background: rgba(0, 61, 255, 1);
+    color: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 0.875rem;
+    cursor: pointer;
+}
+
+.submit:hover {
+    opacity: 0.92;
+}
+
+.submitError {
+  background: rgba(0, 61, 255, 0.55);
+  cursor: not-allowed;
+}
+
+.submitError:hover {
+  opacity: 1;
+}
+
+
+.arrow {
+    width: 16px;
+    height: 16px;
+    filter: brightness(0) invert(1);
+}
+
+.noAccount {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  text-align: center;
+  margin-top: 0.25rem;
+}
+
+.noAccountQuestion {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 0.8125rem;
+  color: rgba(113, 113, 122, 1);
+  margin: 0;
+}
+
+.noAccountAction {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 0.8125rem;
+  color: rgba(113, 113, 122, 1);
+  margin: 0;
+  max-width: 394px;
+}
+
+.footer {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size: 0.8125rem;
+    color: rgba(113, 113, 122, 1);
+    text-align: center;
+    margin: 0;
+    padding: 0 1rem;
+}
+
+
+
+.alert {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  border: 1px solid;
+  margin-bottom: 1.25rem;
+}
+
+.alertError {
+  background: #fef2f2;
+  border-color: #fecaca;
+}
+
+.alertWarning {
+  background: #fffbeb;
+  border-color: #fde68a;
+}
+
+.alertIcon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+.alertText {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 0.8125rem;
+  line-height: 1.3;
+}
+
+.alertError .alertText {
+  color: #b91c1c;
+}
+
+.alertWarning .alertText {
+  color: #92400e;
+}
+
+
+
+
+.passwordWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.passwordWrapper .input {
+  padding-right: 2.75rem;
+}
+
+
+.eyeButton {
+  position: absolute;
+  right: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 6px;
+  color: #71717a;
+}
+
+
+.eyeButton:hover .eyeIcon {
+  opacity: 0.85;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .page {
+        gap: 1.5rem;
+        padding: 1.5rem 1rem;
+    }
+
+    .card {
+        max-width: 440px;
+        padding: 1.75rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .page {
+        justify-content: flex-start;
+        padding-top: 2.5rem;
+        gap: 1.25rem;
+    }
+
+    .logo {
+        height: 32px;
+    }
+
+    .subtitle {
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        padding: 0 1rem;
+    }
+
+    .card {
+        max-width: 100%;
+        padding: 1.25rem;
+        border-radius: 10px;
+    }
+
+    .title {
+        font-size: 1.125rem;
+    }
+
+    .description {
+        font-size: 0.8125rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .noAccount {
+        font-size: 0.75rem;
+    }
+
+    .footer {
+        font-size: 0.75rem;
+        line-height: 1.4;
+    }
+}
