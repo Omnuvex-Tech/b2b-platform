@@ -1,6 +1,8 @@
 import type { Language, Translation } from "@repo/types/types";
 import { api } from "@/lib/api";
 import { config } from "@/config";
+import { NavbarWrapper } from "./components/Navbar/navbar-wrapper";
+import { FooterWrapper } from "./components/Footer/footer-wrapper";
 // import { LanguageSwitcher } from "./components/LanguageSwitcher/language-switcher";
 
 export const dynamic = "force-dynamic";
@@ -20,14 +22,18 @@ export default async function Home() {
     }
 
     return (
-        <div className="flex min-h-svh flex-col items-center justify-center gap-6 p-8">
-            {/* <LanguageSwitcher
-                languages={langResponse.data}
-                initialTranslations={translationResponse.data ?? []}
-            /> */}
+        <div className="flex min-h-svh flex-col">
+            <NavbarWrapper />
 
+            <div className="flex flex-1 flex-col items-center justify-center gap-6 p-8">
+                {/* <LanguageSwitcher
+                    languages={langResponse.data}
+                    initialTranslations={translationResponse.data ?? []}
+                /> */}
 
-            <div><h2>HELLO WORLD</h2></div>
+                <div><h2>HELLO WORLD</h2></div>
+                <FooterWrapper />
+            </div>
         </div>
     );
 }
