@@ -20,7 +20,7 @@ export const NavbarWrapper = () => {
       onCartClick={() => router.push('/cart')}
       menuItems={[
         { label: 'Sifarişlərim', onClick: () => router.push('/orders') },
-        { label: 'Şirkət məlumatları', onClick: () => router.push('/account') },
+        { label: 'Şirkət məlumatları', onClick: () => router.push('/company') },
         { label: 'Çıxış', variant: 'danger', onClick: () => router.push('/login') },
       ]}
     />
