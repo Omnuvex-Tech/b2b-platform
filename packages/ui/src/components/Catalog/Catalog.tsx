@@ -236,9 +236,9 @@ export const Catalog = ({
           </button>
         </div>
 
-        <div className={styles.grid}>
+               <div className={styles.grid}>
           {products.map((product) => (
-         <div key={product.id} className={styles.card}>
+         <a key={product.id} href={`/product/${product.id}`} className={styles.card}>
   <div className={styles.cardImageWrapper}>
     <img src={product.imageSrc} alt={product.name} className={styles.cardImage} />
   </div>
@@ -256,14 +256,18 @@ export const Catalog = ({
     <p className={styles.cardPrice}>{product.price}</p>
     <button
       type="button"
-      onClick={() => onAddToCart?.(product.id)}
+      onClick={(e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        onAddToCart?.(product.id);
+      }}
       className={styles.addToCartButton}
     >
       <img src={cartIconSrc} alt="" className={styles.cartIcon} />
       <span>{addToCartLabel}</span>
     </button>
   </div>
-</div>
+</a>
           ))}
         </div>
       </main>
