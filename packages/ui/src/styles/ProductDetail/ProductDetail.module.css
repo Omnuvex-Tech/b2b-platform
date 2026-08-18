@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-/* Breadcrumb */
 .breadcrumb {
     display: flex;
     align-items: center;
@@ -35,9 +34,8 @@
 }
 
 .breadcrumbIcon {
-    width: 13px;
-    height: 13px;
-    opacity: 0.45;
+    width: 22px;
+    height: 22px;
 }
 
 .card {

@@ -33,5 +33,11 @@ export type {
   RelatedProduct,
 } from "./components/ProductDetail";
 
+export { OrderDetail } from "./components/OrderDetail";
+export type {
+  OrderDetailProps,
+  OrderDetailBreadcrumbItem,
+  OrderLineItem,
+} from "./components/OrderDetail";
 
 export { cn } from "./lib/utils";
