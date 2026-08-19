@@ -15,7 +15,7 @@ export const NavbarWrapper = () => {
       catalogText="Kataloq"
       cartText="Səbət"
       accountText="Mənim kabinetim"
-      onLogoClick={() => router.push('/')}
+      onLogoClick={() => router.push('/catalog')}
       onCatalogClick={() => router.push('/catalog')}
       onCartClick={() => router.push('/cart')}
       menuItems={[

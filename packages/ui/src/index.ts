@@ -40,4 +40,7 @@ export type {
   OrderLineItem,
 } from "./components/OrderDetail";
 
+export { NotFound } from "./components/NotFound";
+export type { NotFoundProps } from "./components/NotFound";
+
 export { cn } from "./lib/utils";

@@ -175,12 +175,12 @@ export const OrderDetail = ({
                             </tr>
                         ))}
 
-                                                <tr>
+                        <tr>
                             <td colSpan={4} className={styles.subtotalBlankCell} />
                             <td className={styles.plainCell}>{subtotalLabel}</td>
                             <td className={styles.totalsValueCell}>{subtotalValue}</td>
                         </tr>
-                                               <tr>
+                        <tr>
                             <td colSpan={4} rowSpan={2} className={styles.wordsCell}></td>
                             <td className={styles.vatLabelCell}>{tableVatLabel}</td>
                             <td className={styles.vatYekunValueCell}>{tableVatValue}</td>
